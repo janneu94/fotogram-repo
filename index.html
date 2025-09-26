@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>fotogram</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="mein_script.js"></script>
+    <link rel="icon" href="./img/favicon.png">
+</head>
+
+<body onload="render()">
+
+    <header>
+        <img src="./img/Fotogram_Logo.svg" class="header_img" alt="fotogram-logo">
+    </header>
+    <main>
+        <h1 id="headline">Your personal Photo album</h1>
+        <section id="content" class="content" aria-labelledby="headline"></section>
+
+        <section id="overlay" class="overlay d_none" onclick="toggleOverlay()" role="show-large-photos" tabindex="-1">
+            <div class="overlay_content" onclick="BubblingPrevention(event)">
+
+                <div id="overlay_photo" role="enlarged-photo"></div>
+                <div class="button_box">
+                    <button class="button_back" onclick="previousPhoto()" alt="button_back"></button>
+                    <button class="button_forward" onclick="nextPhoto()" alt="button_forward"></button>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+    </footer>
+
+</body>
+
+</html>
