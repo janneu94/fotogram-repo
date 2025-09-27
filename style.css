@@ -5,8 +5,8 @@ img {
 }
 
 .single_element {
-    height: 80px;
-    width: 80px;
+    height: 150px;
+    width: 150px;
     overflow: hidden;
     margin: 5px;
     border-radius: 5px;
@@ -19,9 +19,9 @@ img {
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
-    margin: 50px;
-    column-gap: 0;
-    row-gap: 0;
+    margin: 150px;
+    flex: 1;
+    gap: 10px 10px;
 }
 
 header {
@@ -118,11 +118,11 @@ button:hover {
 }
 
 .button_back {
-    background-image: url(/img/arrow_left.png);
+    background-image: url("/Fotogram/img/arrow_left.png");
 }
 
 .button_forward {
-    background-image: url(/img/arrow_right.png);
+    background-image: url("/Fotogram/img/arrow_right.png");
 }
 
 h1 {
